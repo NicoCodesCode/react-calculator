@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calc-container {
+  background-color: #121212;
+  width: clamp(290px, 80vw, 400px);
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.calc-screen {
+  margin: 1rem auto;
+  background-color: #2f2f2f;
+  width: clamp(250px, 75vw, 390px);
+  height: 4rem;
+  padding: 0 5px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.calc-text {
+  font-family: "Consolas";
+  font-size: 2rem;
+  color: greenyellow;
+  position: relative;
+  top: -30%;
+}
+
+.buttons-container {
+  max-width: 400px;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.calc-button {
+  min-width: 40px;
+  height: 50px;
+  font-size: 2rem;
+  background-color: hsl(224, 48%, 16%);
+  color: greenyellow;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.calc-button:hover {
+  background-color: hsl(224, 48%, 21%);
+}
+
+.calc-button:active {
+  background-color: hsl(224, 48%, 26%);
+}
+
+.zero-button {
+  grid-column: 1 / 4;
+}
+
+.clear-button,
+.equals-button,
+.backspace-button {
+  background-color: hsl(350, 79%, 59%);
+}
+
+.clear-button:hover,
+.equals-button:hover,
+.backspace-button:hover {
+  background-color: hsla(350, 79%, 59%, 0.9);
+}
+
+.clear-button:active,
+.equals-button:active,
+.backspace-button:active {
+  background-color: hsl(350, 79%, 64%);
+}
